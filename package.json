@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "dev": "cross-env NODE_ENV=development npx webpack-dev-server --config=webpack.config.js",
     "prebuild": "rimraf dist",
     "build": "cross-env NODE_ENV=production npx webpack --config=webpack.config.js",
@@ -21,6 +21,9 @@
     "port": 3000,
     "commitizen": {
       "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz.config.js"
     }
   },
   "devDependencies": {
